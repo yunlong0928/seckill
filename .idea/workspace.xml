@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b96e87d2-cd68-41ed-8cba-b747a40d407e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/seckill/dao/SeckillDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/seckill/entity/SuccessKilled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/seckill_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/seckill_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_18.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/entity/Seckill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/entity/Seckill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seckill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/seckill.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/dao/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/dao/SeckillDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/dao/SuccessKilledDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/dao/SuccessKilledDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -45,11 +52,78 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592409936406" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-security-oauth2-learn-master/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.seckill.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SuccessKilledDaoTest.insertSuccessKilled">
+    <configuration name="SeckillDaoTest.queryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillDaoTest.queryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="queryById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessKilledDaoTest.insertSuccessKilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.dao.SuccessKilledDaoTest" />
+      <option name="METHOD_NAME" value="insertSuccessKilled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SuccessKilledDaoTest.insertSuccessKilled" />
+        <item itemvalue="JUnit.SeckillDaoTest.queryAll" />
+        <item itemvalue="JUnit.SeckillDaoTest.queryById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,6 +140,11 @@
       <workItem from="1592358626211" duration="1693000" />
       <workItem from="1592407573095" duration="1491000" />
       <workItem from="1592613965348" duration="5238000" />
+      <workItem from="1592623405679" duration="17000" />
+      <workItem from="1592722249635" duration="9283000" />
+      <workItem from="1592789891790" duration="14000" />
+      <workItem from="1592912444050" duration="8026000" />
+      <workItem from="1592980772500" duration="612000" />
     </task>
     <servers />
   </component>
@@ -77,17 +156,57 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592616193842" />
-    <state x="655" y="305" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1592615533610">
+    <state x="655" y="305" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1592729140870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="305" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592615533610" />
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1592615105498">
+    <state x="655" y="305" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592729140870" />
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1592916825727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592615105498" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1592615534316">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592916825727" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592623418242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592615534316" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592623418242" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592732396217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396217" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592732396217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396217" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592732396217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396217" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592732396217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396217" />
+    <state width="1877" height="332" key="GridCell.Tab.1.bottom" timestamp="1592732396210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396210" />
+    <state width="1877" height="332" key="GridCell.Tab.1.center" timestamp="1592732396210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="332" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396210" />
+    <state width="1877" height="332" key="GridCell.Tab.1.left" timestamp="1592732396210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="332" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396210" />
+    <state width="1877" height="332" key="GridCell.Tab.1.right" timestamp="1592732396210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="332" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592732396210" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1592729368148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592729368148" />
+    <state x="1108" y="212" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1592725500882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1108" y="212" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592725500882" />
   </component>
 </project>
