@@ -14,6 +14,7 @@ import org.seckill.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
@@ -25,6 +26,7 @@ import java.util.List;
  * @author Aaron
  * @since 2020/6/23 20:22
  */
+@Service
 public class SeckillServiceImpl implements SeckillService {
     // md5盐值,用于混淆
     private final String slat = "salijr32ujjeopujOPIUWPOIUU#WO#(*#(*IKQKLJDFL:KSJDGH";
@@ -40,7 +42,7 @@ public class SeckillServiceImpl implements SeckillService {
         return seckillDao.queryAll(0, 4);
     }
 
-    public Seckill getById(long seckillId){
+    public Seckill getByID(long seckillId){
         return seckillDao.queryById(seckillId);
     }
 
@@ -54,10 +56,11 @@ public class SeckillServiceImpl implements SeckillService {
         if(nowTime.getTime() < startTime.getTime() || nowTime.getTime() > endTime.getTime()){
             return new Exposer(false, seckillId, nowTime.getTime(), startTime.getTime(), endTime.getTime());
         }
-        String md5 = getMD5();
+        String md5 = getMD5(seckillId);
         return new Exposer(true, md5, seckillId);
     }
 
+    //执行秒杀
     @Transactional
     public SeckillExecution executeSeckill(long seckillId, long userPhone, String md5){
         if(md5 == null || !md5.equals(getMD5(seckillId)))
@@ -65,19 +68,21 @@ public class SeckillServiceImpl implements SeckillService {
 
         Date now = new Date();
         try {
+            //记录购买行为
             int insertCount = successKilledDao.insertSuccessKilled(seckillId, userPhone);
             if(insertCount <= 0)
                 throw new RepeatKillException("seckill repeated");
 
+            //减库存
             int updateCount = seckillDao.reduceNumber(seckillId, now);
             if(updateCount <= 0)
                 throw new SeckillCloseException("seckill is closed");
 
             SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
             return new SeckillExecution(seckillId, SeckillStateEnum.SUCCESS, successKilled);
-        }catch (SeckillException e){
+        } catch (SeckillException e) {
             throw e;
-        }catch (Exception e){
+        } catch (Exception e){
             //为什么要把所有的异常都转成运行时异常？
             //现在既有throw又有catch，到底是哪里捕获异常？
             logger.error(e.getMessage(),e);
